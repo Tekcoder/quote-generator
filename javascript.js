@@ -1,22 +1,15 @@
+
+ let array1 = ['To believe in something', 'A casual stroll through the','Success is most often achieved by those who','Believe something and the Universe is on its way to being changed. Because you\'ve changed, by believing.','Live the Life of Your Dreams When you start living the life of your dreams, there will always be obstacles,','You never know how much you really believe anything','Tell people there\'s an invisible man in the sky who created the universe, and the vast','You have to believe','Be sure you put','It\'s hard to believe in','You don’t believe things because they make','Follow your bliss and the universe']
+let array2 = ['and not to live it,', 'lunatic asylum shows that faith','don\'t know that failure is','Once you\'ve changed, other things start to follow.','doubters, mistakes and setbacks along the way. But with hard work, perseverance and self-belief there','until its truth or falsehood becomes a matter','majority will believe you. Tell them the paint is wet, ', 'Otherwise, it will never','your feet in the right place,','coincidence, but it\'s even harder','your life better, you believe them','will open doors for you where']
+let array3 = ['is dishonest. - Mahatma Gandhi ', 'does not prove anything. ― Friedrich Nietzsche','inevitable.― Coco Chanel, Believing in Ourselves: The Wisdom of Women','Isn\'t that the way it works?”― Diane Duane, So You Want to Be a Wizard ','is no limit to what you can achieve.― Roy T. Bennett, The Light in the Heart ','of life and death to you.― C.S. Lewis ','and they have to touch it to be sure.― George Carlin ','happen.― Neil Gaiman, Stardust ','then stand firm.― Abraham Lincoln ','to believe in anything else.― John Green, Will Grayson, Will Grayson ','because they’re true.― Veronica Roth, Allegiant ','there were only walls.― Joseph Campbell ']
+
+
 const newQuote = () => {
-let randomNumber = Math.floor(Math.random() * (array.length));
-document.getElementById('quoteDisplay').innerHTML = array[randomNumber];
+  let beginning = Math.floor(Math.random() * (array1.length));
+  let middle = Math.floor(Math.random() * (array2.length));
+  let end = Math.floor(Math.random() * (array3.length));
+  let quote = array1[beginning] + ' ' + array2[middle] + ' ' + array3[end];
+  document.getElementById('singleQuote').innerHTML = quote;
 }
 
-let array = ['The way get started is to quit talking and begin doing. – Walt Disney',
-'The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty. – Winston Churchill',
-'Don\’t let yesterday take up too much of today.” – Will Rogers',
-'You learn more from failure than from success. Don\’t let it stop you. Failure builds character.” – Unknown',
-'It\’s not whether you get knocked down, it\’s whether you get up.” – Inspirational Quote by Vince Lombardi',
-'If you are working on something that you really care about, you don\’t have to be pushed. The vision pulls you.” – Steve Jobs',
-'People who are crazy enough to think they can change the world, are the ones who do.” – Rob Siltanen',
-'Failure will never overtake me if my determination to succeed is strong enough.” – Og Mandino',
-'Entrepreneurs are great at dealing with uncertainty and also very good at minimizing risk. That’s the classic entrepreneur.” – Mohnish Pabrai',
-'We may encounter many defeats but we must not be defeated.” – Maya Angelou']
 
-
-// let array_middle = ['is to quit talking','every opportunity. The optimist sees','take up too much','from success. Don’t let it stop you.','knocked down, it’s whether','you really care about, you don’t have to be pushed.','to think they can change the world,','if my determination to succeed','uncertainty and also very good at minimizing risk.','many defeats but we','']
-
-
-
-// let array_end = ['and begin doing. – Walt Disney','opportunity in every difficulty. – Winston Churchill','of today.” – Will Rogers','Failure builds character.” – Unknown','you get up.” – Inspirational Quote by Vince Lombardi','The vision pulls you.” – Steve Jobs','are the ones who do.” – Rob Siltanen','is strong enough.” – Og Mandino','That’s the classic entrepreneur.” – Mohnish Pabrai','must not be defeated.” – Maya Angelou','','','']
