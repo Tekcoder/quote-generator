@@ -12,30 +12,38 @@
   <h1>Belief Quotes</h1>
   <p>You can choose the number of quotes that you want between 1 and 5. Select any one:</p>
     <form>
-       <select name = "dropdown">
-          <option value = "1" id='one' selected>1</option>
-          <option value = "2" id='two'>2</option>
-          <option value = "3" id="three">3</option>
-          <option value = "4" id="four">4</option>
-          <option value = "5" id="five">5</option>
+       <select name = "dropdown" id="belief">
+          <option value = "1">1</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+          <option value = "4">4</option>
+          <option value = "5">5</option>
        </select>
     </form>
+    <button onclick="getBeliefValue()">Get Value</button>
   <button onclick="beliefQuotes()" >New Quote</button>
+  <div>
+    <p>Selected value is: <p id="value_1"></p></p>
+  </div>
   <div id="beliefQuotes">
       <!-- Quotes will display here -->
         </div>
   <h1>Success Quotes</h1>
   <p>You can choose the number of quotes that you want between 1 and 5. Select any one:</p>
     <form>
-       <select name = "dropdown">
-          <option value = "1" id='1' selected>1</option>
-          <option value = "2" id='2'>2</option>
-          <option value = "3" id="3">3</option>
-          <option value = "4" id="4">4</option>
-          <option value = "5" id="5">5</option>
+       <select name = "dropdown" id="success">
+          <option value = "1">1</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+          <option value = "4">4</option>
+          <option value = "5">5</option>
        </select>
     </form>
+    <button onclick="getSuccessValue()">Get Value</button>
   <button onclick="successQuotes()" >New Quote</button>
+  <div>
+    <p>Selected value is: <p id="value_2"></p></p>
+  </div>
   <div id="successQuotes">
       <!-- Quotes will display here -->
         </div>

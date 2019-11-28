@@ -21,6 +21,11 @@ const beliefQuotes = () => {
   document.getElementById('beliefQuotes').innerHTML = quote;
 }
 
+const getBeliefValue = () => {
+  let value = document.getElementById('belief').value;
+  document.getElementById('value_1').innerHTML = value;
+}
+
 const successQuotes = () => {
   let beginning = Math.floor(Math.random() * (array4.length));
   let middle = Math.floor(Math.random() * (array5.length));
@@ -29,13 +34,7 @@ const successQuotes = () => {
   document.getElementById('successQuotes').innerHTML = quote;
 }
 
-const multipleQuotes = () => {
-  switch (id){
-  case 'one':
-      beliefQuotes()
-      break;
-  case 'two':
-      beliefQuotes()
-      break;
-  }
+const getSuccessValue = () => {
+  let value = document.getElementById('success').value;
+  document.getElementById('value_2').innerHTML = value;
 }
