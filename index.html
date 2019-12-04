@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quote generator</title>
 </head>
-<body>
-    <h1>Simple Quote generator</h1>
-    <h2>Welcome to the Quote generator app</h2>
-  <h1>Belief Quotes</h1>
-  <p>You can choose the number of quotes that you want between 1 and 5. Select any one:</p>
-    <form>
-       <select name = "dropdown" id="belief">
-          <option value = "1">1</option>
-          <option value = "2">2</option>
-          <option value = "3">3</option>
-          <option value = "4">4</option>
-          <option value = "5">5</option>
-       </select>
-    </form>
-  <button onclick="beliefQuotes()" >New Quote</button>
-  <div id="beliefQuotes">
-      <!-- Quotes will display here -->
+<body class="alert alert-secondary" role="alert">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <h1>Simple Quote generator App</h1>
         </div>
-  <h1>Success Quotes</h1>
-  <p>You can choose the number of quotes that you want between 1 and 5. Select any one:</p>
-    <form>
-       <select name = "dropdown" id="success">
-          <option value = "1">1</option>
-          <option value = "2">2</option>
-          <option value = "3">3</option>
-          <option value = "4">4</option>
-          <option value = "5">5</option>
-       </select>
-    </form>
-  <button onclick="successQuotes()" >New Quote</button>
-  <div id="successQuotes">
-      <!-- Quotes will display here -->
+        <div class="row">
+          <div class="col-12">
+            <h5>Welcome to the quote generator app where quotes are randomly generated based on the users' choice of quotes.<br />Here, we have two beautiful set of quotes to choose from namely; Belief quotes and Success quotes <br /> Let's start selecting them now!
+            </h5>
+          </div>
         </div>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-6 alert alert-info" role="alert"><h2>Belief Quotes</h2>
+    <p>You can choose the number of quotes that you want between 1 and 5. Select any one:</p>
+      <form>
+         <select name = "dropdown" id="belief">
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+         </select>
+      </form>
+    <button onclick="beliefQuotes()" >New Quote</button>
+    <div id="beliefQuotes">
+        <!-- Quotes will display here -->
+          </div></div>
+  <div class="col-6 alert alert-success" role="alert"><h2>Success Quotes</h2>
+    <p>You can choose the number of quotes that you want between 1 and 5. Select any one:</p>
+      <form>
+         <select name = "dropdown" id="success">
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+         </select>
+      </form>
+    <button onclick="successQuotes()" >New Quote</button>
+    <div id="successQuotes">
+        <!-- Quotes will display here -->
+          </div></div>
+</div>
+</div>
+    
+  
+  
   <script src="javascript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
