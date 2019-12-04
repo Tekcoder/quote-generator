@@ -14,28 +14,32 @@ array5 = ['is not fatal: It is the courage to','originality than to succeed','ro
 array6 = ['continue that counts."-- Winston S. Churchill','in imitation."-- Herman Melville','exactly the same."-- Colin R. Davis','to be looking for it."-- Henry David Thoreau','create them."-- Chris Grosser','create them."-- Chris Grosser','go for the great."--John D. Rockefeller','I seem to have."-- Thomas Jefferson','those who are afraid you will succeed."-- Ray Goforth','easier; wish you were better."-- Jim Rohn','become a man of value."-- Albert Einstein']
 
 const beliefQuotes = () => {
-  let beginning = Math.floor(Math.random() * (array1.length));
-  let middle = Math.floor(Math.random() * (array2.length));
-  let end = Math.floor(Math.random() * (array3.length));
-  let quote = array1[beginning] + ' ' + array2[middle] + ' ' + array3[end];
-  // document.getElementById('beliefQuotes').innerHTML = quote;
   let value = document.getElementById('belief').value;
   let number = parseInt(value)
+
+  let quotes = ''
+
   for (let i = 0; i < number; i++) {
-    document.getElementById('beliefQuotes').innerHTML = quote;
+    let beginning = Math.floor(Math.random() * (array1.length));
+  let middle = Math.floor(Math.random() * (array2.length));
+  let end = Math.floor(Math.random() * (array3.length));
+    quotes += array1[beginning] + ' ' + array2[middle] + ' ' + array3[end]+ "<br />";
+    document.getElementById('beliefQuotes').innerHTML = quotes;
   }
 }
 
 const successQuotes = () => {
-  let beginning = Math.floor(Math.random() * (array4.length));
-  let middle = Math.floor(Math.random() * (array5.length));
-  let end = Math.floor(Math.random() * (array6.length));
-  let quote = array4[beginning] + ' ' + array5[middle] + ' ' + array6[end];
-  // document.getElementById('successQuotes').innerHTML = quote;
   let value = document.getElementById('success').value;
   let number = parseInt(value)
+
+  let quotes = ''
+
   for (let i = 0; i < number; i++) {
-    document.getElementById('successQuotes').innerHTML = quote;
+    let beginning = Math.floor(Math.random() * (array4.length));
+    let middle = Math.floor(Math.random() * (array5.length));
+    let end = Math.floor(Math.random() * (array6.length));
+    quotes += array4[beginning] + ' ' + array5[middle] + ' ' + array6[end]+ "<br />";
+    document.getElementById('successQuotes').innerHTML = quotes;
   }
 }
 
