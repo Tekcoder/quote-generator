@@ -18,11 +18,11 @@ const beliefQuotes = () => {
   let middle = Math.floor(Math.random() * (array2.length));
   let end = Math.floor(Math.random() * (array3.length));
   let quote = array1[beginning] + ' ' + array2[middle] + ' ' + array3[end];
-  document.getElementById('beliefQuotes').innerHTML = quote;
+  // document.getElementById('beliefQuotes').innerHTML = quote;
   let value = document.getElementById('belief').value;
   let number = parseInt(value)
   for (let i = 0; i < number; i++) {
-    document.getElementById('value_1').innerHTML = number;
+    document.getElementById('beliefQuotes').innerHTML = quote;
   }
 }
 
@@ -31,11 +31,11 @@ const successQuotes = () => {
   let middle = Math.floor(Math.random() * (array5.length));
   let end = Math.floor(Math.random() * (array6.length));
   let quote = array4[beginning] + ' ' + array5[middle] + ' ' + array6[end];
-  document.getElementById('successQuotes').innerHTML = quote;
+  // document.getElementById('successQuotes').innerHTML = quote;
   let value = document.getElementById('success').value;
   let number = parseInt(value)
   for (let i = 0; i < number; i++) {
-    document.getElementById('value_2').innerHTML = number;
+    document.getElementById('successQuotes').innerHTML = quote;
   }
 }
 
