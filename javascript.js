@@ -26,11 +26,6 @@ const beliefQuotes = () => {
   }
 }
 
-const getBeliefValue = () => {
-  let value = document.getElementById('belief').value;
-  document.getElementById('value_1').innerHTML = value;
-}
-
 const successQuotes = () => {
   let beginning = Math.floor(Math.random() * (array4.length));
   let middle = Math.floor(Math.random() * (array5.length));
